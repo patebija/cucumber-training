@@ -1,0 +1,371 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9355177300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch Flipkart application",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.launchFlipkartApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T02:18:30.862Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8175249300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User is able to login with valid username and password",
+        "description": "",
+        "id": "user-is-able-to-login-into-flipkart;user-is-able-to-login-with-valid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2759002000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 634998500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters valid abirocks007@gmail.com in EnterUsername field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abirocks007@gmail.com",
+                  "offset": 18
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.enterUsername(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 341997000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters valid PA33word! in EnterPassword field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PA33word!",
+                  "offset": 18
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 458003200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.clickLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d88.0.4324.182)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PERSONAL-PC\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\\Users\\Bijan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: e4253c5c9cdfb79e9e5a5c921bd5997d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)\r\n\tat com.qascript.stepDefinitions.LoginStepDefs.validateLogin(LoginStepDefs.java:60)\r\n\tat ✽.User is logged in successfully(file:///C:/Projects/Cucumber-Training/src/test/resources/features/LoginPage.feature:12)\r\n",
+              "duration": 3247000600,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User is logged in successfully",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.validateLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11572058500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch Flipkart application",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.launchFlipkartApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T02:18:56.312Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6915995000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User is able to login with invalid username and password",
+        "description": "",
+        "id": "user-is-able-to-login-into-flipkart;user-is-able-to-login-with-invalid-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1057355000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 541073000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters invalid abirocks007@gmail.com in EnterUsername field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abirocks007@gmail.com",
+                  "offset": 20
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userEntersInvalidUsernameInEnterUsernameField(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 236990700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters invalid password in EnterPassword field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 20
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userEntersInvalidPasswordInEnterPasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 304001300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.clickLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203998400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User cannot login into application",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userCannotLoginIntoApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10340394600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch Flipkart application",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.launchFlipkartApplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T02:19:17.183Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5962919400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User is able to login with invalid username and password",
+        "description": "",
+        "id": "user-is-able-to-login-into-flipkart;user-is-able-to-login-with-invalid-username-and-password;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 4121956400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 420999700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters invalid abirocks@gmail.com in EnterUsername field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abirocks@gmail.com",
+                  "offset": 20
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userEntersInvalidUsernameInEnterUsernameField(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 295998900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters invalid PA33word! in EnterPassword field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PA33word!",
+                  "offset": 20
+                }
+              ],
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userEntersInvalidPasswordInEnterPasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 358995300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.clickLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285001500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User cannot login into application",
+            "match": {
+              "location": "com.qascript.stepDefinitions.LoginStepDefs.userCannotLoginIntoApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "User is able to login into Flipkart",
+    "description": "",
+    "id": "user-is-able-to-login-into-flipkart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
+    "tags": []
+  }
+]
