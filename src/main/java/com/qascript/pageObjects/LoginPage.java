@@ -1,12 +1,12 @@
 package com.qascript.pageObjects;
 
+import com.qascript.utils.BaseClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage {
+public class LoginPage extends BaseClass {
 
     public static String txtEmail="(//input[@type='text'])[2]";
     public static String txtPassword="//input[@type='password']";
@@ -14,7 +14,6 @@ public class LoginPage {
     public static String lblUsername = "(//*[@class='exehdJ'])[1]";
     public static String lblError = "//*[@class='_2YULOR']/span";
 
-    public static WebDriver driver;
 
     public static void enterEmail(String username){
         driver.findElement(By.xpath(txtEmail)).sendKeys(username);

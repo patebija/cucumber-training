@@ -7,23 +7,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import static com.qascript.utils.BaseClass.*;
 
 public class LoginStepDefs {
 
-    private WebDriver driver;
-
     @Before
     public void setup(){
-        System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        startDriver();
     }
 
     @After
     public void close(){
-        driver.quit();
+        closeDriver();
     }
 
 
@@ -52,7 +48,7 @@ public class LoginStepDefs {
 
     @Given("Launch Flipkart application")
     public void launchFlipkartApplication() {
-        driver.get("https://www.flipkart.com");
+        launchApplication();
     }
 
     @Given("^User enters invalid (.*) in EnterUsername field$")
