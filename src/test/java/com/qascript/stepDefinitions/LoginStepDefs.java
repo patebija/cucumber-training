@@ -66,4 +66,12 @@ public class LoginStepDefs {
        LoginPage.validateUnsuccessfulLogin("Your username or password is incorrect");
 
     }
+
+    @And("User is logged in")
+    public void userIsLoggedIn() {
+        LoginPage.enterEmail("abirocks007@gmail.com");
+        LoginPage.enterPassword("PA33word!");
+        LoginPage.clickLogin();
+
+    }
 }

@@ -26,7 +26,14 @@ public class LoginPage extends BaseClass {
     public static void clickLogin(){
         driver.findElement(By.xpath(btnLogin)).click();
         WebDriverWait wait = new WebDriverWait(driver,30);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(lblUsername)));
+        try {
+            synchronized (driver) {
+                driver.wait(3000);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath(lblUsername)));
     }
 
     public static void validateSuccessfulLogin(String expectedText){
